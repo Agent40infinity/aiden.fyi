@@ -1,0 +1,79 @@
+{
+  "professional": [
+    {
+      "title": "",
+      "image": "../Resources/Database/Varsity.jpg",
+      "description": "Game Developer at Powercor, working on Varsity.",
+      "key": [ "Varsity is a Training Application for Powercor & Citipower Electricians and Lineies with a VR counterpart.", "Game Developer", "Fullstack Web Development", "Immersive Technology (VR)" ],
+      "utility": [ "Unity", "C#", "HLSL", ".NET", "Blazor", "Powercor" ],
+      "link": "https://apps.apple.com/us/app/varsity-immersive-learning/id1535418137"
+    },
+    {
+      "title": "",
+      "image": "../Resources/Database/SOE.jpg",
+      "description": "The ScriptableObject Editor is a tool designed to centralize the management proccesses behind modifying ScriptableObjects.",
+      "key": [ "System.Type manipulation", "Serialized object & property modification", "Modular Editor Tool", "Custom Creation Window" ],
+      "utility": [ "Unity", "C#", "Package", "Editor Tool", "Systems Development" ],
+      "link": "https://assetstore.unity.com/packages/tools/utilities/scriptable-object-editor-235840"
+    },
+    {
+      "title": "",
+      "image": "../Resources/Database/Summit.jpg",
+      "description": "Summit is a 3D third person Rogue-Like inspired by Risk of Rain 2.",
+      "key": [ "Lead Programmer", "Modular Boss State Machine", "Systems Development", "Modular Scene Mangement", "Core Game Structure" ],
+      "utility": [ "Unity", "C#", "HLSL", "University", "Indie" ],
+      "link": "https://coolevil98.itch.io/summitbuild"
+    },
+    {
+      "title": "Dark Light",
+      "image": "../Resources/Database/DarkLight.jpg",
+      "description": "Dark Light is a 2D metroidvania inspirated by Hollow Knight and the Soulsbourne Series.",
+      "key": [ "Velocity-based 2D physics controller", "Player state machine", "Dynamic save system using Json.NET" ],
+      "utility": [ "Unity", "C#", "HLSL", "Indie" ]
+    },
+    {
+      "title": "CQU Internship",
+      "image": "../Resources/Database/Statistics.jpg",
+      "description": "Gamification visual novel created for Central Queensland University apart of a internship program at Macquarie University",
+      "key": [ "Lead Programmer", "Custom Dynamic Dialogue System", "Scenario Setup using Modular Json Framework", "Completely modifiable w/o additional programming" ],
+      "utility": [ "Unity", "C#", "Work-Experience", "University" ]
+    },
+    {
+      "title": "Bright",
+      "image": "../Resources/Database/Bright.jpg",
+      "description": "Bright is a top down, 2D horror dungeon crawler.",
+      "key": [ "Procedural Dungeon Generation", "Custom Dungeon Camera", "Dynamic game events", "From scratch, A* styled pathfinding" ],
+      "utility": [ "Unity", "C#", "University" ]
+    }
+  ],
+  "personal": [
+    {
+      "title": "Utilities Project",
+      "image": "../Resources/Database/Untitled.jpg",
+      "description": "A dynamic unity template created with the explicit purpose of being used as a base for all future projects.",
+      "key": [ "Asynchronous scene loading", "Modular save system", "Custom Event-based Input System" ],
+      "utility": [ "Unity", "C#" ]
+    },
+    {
+      "title": "Pokémon SoulSilver Remake",
+      "image": "../Resources/Database/SoulSilver.jpg",
+      "description": "A faithful remake of the 4th generation Pokémon titles, SoulSilver & HeartGold. Please don't sue me Nintendo.",
+      "key": [],
+      "utility": [ "Unity", "C#", "Remake" ]
+    },
+    {
+      "title": "Final Fantasy: Brave Exvius Battle System",
+      "image": "../Resources/Database/FinalFantasy.jpg",
+      "description": "A recreation of the FFBE Battle System created for a major project during my HSC.",
+      "key": [],
+      "utility": [ "Greenfoot", "Java", "Remake" ]
+    },
+    {
+      "title": "Agent40",
+      "image": "../Resources/Database/Agent40.jpg",
+      "description": "Alias used for content creation, game development, gaming, and general use during my lifetime.",
+      "key": [],
+      "utility": [ "Youtube", "Twitch", "Content Creator" ]
+    }
+  ]
+}

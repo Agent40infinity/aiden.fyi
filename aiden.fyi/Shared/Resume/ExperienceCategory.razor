@@ -1,0 +1,17 @@
+﻿@foreach (var category in Data)
+{
+    <div class="project-skill-box">
+        <div class="sub-box">
+            <img class="sub-icon svg" src="@category.icon" alt="field" />
+            <p class="sub-title"> @category.name </p>
+        </div>
+        <div class="project-skill-bar">
+            <Experience Data=@category.list />
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public List<Components.ExperienceCategory> Data { get; set; } = new List<Components.ExperienceCategory>();
+}

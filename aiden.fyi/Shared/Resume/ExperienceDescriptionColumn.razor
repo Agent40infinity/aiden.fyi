@@ -1,0 +1,11 @@
+﻿<div class="description-item">
+    @foreach (var description in Data)
+    {
+        <p class="description-entry">- @description </p>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<string> Data { get; set; } = new List<string>();
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Perpetua';
+    src: url('../Resources/Fonts/per_____.ttf') format('truetype');
+}
+
+@media print and (color) {
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(179, 179, 179);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(107, 107, 107);
+}

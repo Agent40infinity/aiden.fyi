@@ -1,0 +1,120 @@
+﻿<div class="project-container">
+    @foreach (var project in Projects)
+    {
+        <div class="project-item">
+            <a href="@project.link">
+                <div class="project-header">
+                    <img class="project-img" src="@project.image" alt="project-item-@project.title-image" />
+                    @if (project.title != "")
+                    {
+                        <p class="project-title"> @project.title </p>
+                    }
+                </div>
+                <div class="project-utility">
+                    @foreach (var utility in project.utility)
+                    {
+                        <span class="project-utility-item"> @utility </span>
+                    }
+                </div>
+                <div class="project-info">
+                    <p class="project-description"> @project.description </p>
+                    <div class="project-list">
+                        <p class=project-list-key> Notable Contributions: </p>
+                        @foreach (var key in project.key)
+                        {
+                            <p class="project-list-key">- @key</p>
+                        }
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Project> Projects { get; set; } = new List<Project>();
+}
+
+<style>
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .project-item {
+        width: 400px;
+        margin: 15px;
+        padding-bottom: 20px;
+        background-color: rgb(26, 26, 26);
+        border-radius: 25px;
+        transition: all 0.2s;
+    }
+
+        .project-item:hover {
+            transform: scale(1.05);
+        }
+
+    .project-header {
+        height: 250px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        border-radius: 25px 25px 0px 0px;
+        overflow: hidden;
+    }
+
+    .project-img {
+        display: block;
+        position: absolute;
+        left: 50%;
+        min-width: 100%;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    .project-title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.85);
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .project-info {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .project-description {
+        margin-bottom: 10px;
+    }
+
+    .project-list {
+        text-align: left;
+    }
+
+    .project-list-key {
+        margin: 5px 0px 5px 0px;
+    }
+
+    .project-utility {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 7px 12px 12px 12px;
+    }
+
+    .project-utility-item {
+        padding: 5px 15px 5px 15px;
+        margin: 5px 5px 0px 5px;
+        border-radius: 5px;
+        background-color: rgb(45, 45, 45)
+    }
+</style>

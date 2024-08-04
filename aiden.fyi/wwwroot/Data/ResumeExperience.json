@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Professional Projects",
+    "icon": "../Resources/SVGs/Company.svg",
+    "list": [
+      {
+        "project": "Game Developer",
+        "location": "Powercor",
+        "date": "Feburary 2023 - Present",
+        "logo": "../Resources/Database/Varsity_Logo.jpg",
+        "description": "Powercor Australia - Victoria, Australia",
+        "columns": true,
+        "selected": true,
+        "details": [
+          "Game Developer for IOS training application 'Varsity'.",
+          "Full Stack Web Developer for user results of Varsity.",
+          "Immersive Technology Developer for VR training application.",
+          "Designed, Implemented, and Maintained complex systems including;",
+          "Reflection based MVVM data management, linked through data binding GUI.",
+          "Local results cache for user data posting to AWS backend.",
+          "VR & IOS object selection outlining with HLSL.",
+          "'Activity, step' entity component system for gameplay loop.",
+          "Restructure and optimisation of web frontend for user results in Blazor."
+        ]
+      },
+      {
+        "project": "ScriptableObject Editor",
+        "location": "Indie",
+        "date": "July 2022 - December 2022",
+        "logo": "../Resources/Database/SOE_Logo.jpg",
+        "description": "Published Tool designed to centralize the management proccesses behind modifying ScriptableObjects.",
+        "columns": true,
+        "details": [
+          "Tool created as a custom editor window that utilizes Unity's EditorGUI backend.",
+          "Makes use of AppDomain and System.Type 'generics' to get and modify assemblies.",
+          "Designed to simplify and centralize the creation and modification processes behind Scriptable Objects.",
+          "Utilizes a serialized window to display and give modification access to a selected ScriptableObject's fields and properties.",
+          "Allows for the deletion and renaming of the selected object within the serialized window.",
+          "Scrollview accompanied by a case-insensitive search sidebar to display all Scriptable Objects.",
+          "Multiple filters to mask displayed selectable Scriptable Objects.",
+          "Assembly filter for masking the displayed objects to a specific assembly associated within the project.",
+          "Folder filter to mask only objects contained within a specified directory.",
+          "Type type filter to mask class derived objects.",
+          "Custom creation window for creating new ScriptableObjects as well as new class types of ScriptableObjects.",
+          "Tested and working for all versions of Unity past 2019 (Excluding versions recognised by Unity to cause issues)."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University Projects",
+    "icon": "../Resources/SVGs/Group.svg",
+    "list": [
+      {
+        "project": "Summit - Lead Programmer",
+        "location": "MQU",
+        "date": "July 2022 - November 2022",
+        "logo": "../Resources/Database/Summit.jpg",
+        "description": "Student project with 5 team members, 3 programmers. 3D third person rogue-like made in Unity. 410+ personal hours dedicated.",
+        "columns": true,
+        "details": [
+          "Re-engineered existing codebase focusing on efficiency, modularity, and simplicity.",
+          "Acted as senior developer to manage & aid development processes across the board (including design and art).",
+          "Designed and implemented all backend systems related to gameplay and structure.",
+          "Designed and implemented custom Boss State Machine.",
+          "Modularized boss states for designer friendly implementation.",
+          "Implemented modular animation event listeners to control states",
+          "Implemented modularized scene management with asynchoronous loading.",
+          "Designed and assisted implementation of power-ups.",
+          "Designed and implemented a custom interaction system utlizing listeners for modularity.",
+          "Developed announcement and dialogue systems.",
+          "Custom camera handler for panning, effects, and 3rd person perspective.",
+          "Managed custom lighting and skybox handling."
+        ]
+      },
+      {
+        "project": "CQU Statistics Project - Lead Programmer",
+        "location": "MQU",
+        "date": "Feburary 2022 - June 2022",
+        "logo": "../Resources/Database/CQU.jpg",
+        "description": "Student project with 5 team members, 1 programmers. Gamification visual novel made in Unity.",
+        "columns": true,
+        "details": [
+          "Apart of the PACE Internship program at Macquarie University, dedicated client was Central Queensland University.",
+          "Designed, implemented, and mantained systems in accordance to requirements given by the client.",
+          "Client task: Create a gamified quiz to track student's knowledge of statisitics.",
+          "Custom Dynamic Dialogue System with dialogue.",
+          "Full intergration with Google Sheets API v4.",
+          "Records and collects player completion data using google database.",
+          "Completely automated visual novel setup without additional programming.",
+          "Dialogue options used to create diverging pathways for player progress based on their performance.",
+          "Custom commands and modifiers used to enhance dialogue with effects, sprite changes, and more.",
+          "Framework creates game content based on .json level files.",
+          "Full intergration with Json.NET framework using custom class & interface based serialization."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Personal Projects",
+    "icon": "../Resources/SVGs/Profile.svg",
+    "list": [
+      {
+        "project": "Dark Light",
+        "location": "",
+        "date": "July 2019 - Present",
+        "logo": "",
+        "description": "2D metroidvania inspirated by Hollow Knight and the Soulsbourne Series. Paused development while at Univeristy.",
+        "columns": false,
+        "details": [
+          "Custom player state machine.",
+          "Custom velocity based movement for fast paced mobility and combat.",
+          "Command based custom input system used to handle player movement. Allows for control over the player to be utilized in systems handling cutscenes and event triggers.",
+          "Custom input system derived from Unity Events to allow for control configuration and keybinding storing.",
+          "Modular interface based save system using Json.NET (Works with binary serialization).",
+          "From scratch A* pathfinding for non-player entities."
+        ]
+      }
+    ]
+  }
+]

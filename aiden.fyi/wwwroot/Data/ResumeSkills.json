@@ -1,0 +1,70 @@
+{
+  "legend": [
+    {
+      "title": "Professional",
+      "level": "6"
+    },
+    {
+      "title": "Advanced",
+      "level": "4"
+    },
+    {
+      "title": "Intermediate",
+      "level": "3"
+    },
+    {
+      "title": "Beginner",
+      "level": "1"
+    }
+  ],
+  "language": [
+    {
+      "title": "C#",
+      "level": "6"
+    },
+    {
+      "title": "C",
+      "level": "3"
+    },
+    {
+      "title": ".NET",
+      "level": "4"
+    },
+    {
+      "title": "ShaderCore",
+      "level": "4"
+    },
+    {
+      "title": "HLSL",
+      "level": "4"
+    },
+    {
+      "title": "Rust",
+      "level": "1"
+    },
+    {
+      "title": "Java",
+      "level": "4"
+    },
+    {
+      "title": "JavaScript",
+      "level": "6"
+    },
+    {
+      "title": "HTML",
+      "level": "4"
+    },
+    {
+      "title": "CSS",
+      "level": "4"
+    },
+    {
+      "title": "PHP",
+      "level": "3"
+    },
+    {
+      "title": "Python",
+      "level": "1"
+    }
+  ]
+}

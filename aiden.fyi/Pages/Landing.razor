@@ -1,0 +1,86 @@
+﻿@page "/Landing/"
+
+<video class="background" autoplay muted loop>
+    <source src="../Resources/Media/Main.mp4" type="video/mp4">
+</video>
+<main class="content">
+    <section class="banner">
+        <h1 class="title">Aiden Nathan</h1>
+        <hr class="hidden">
+        <p class="subtext hidden">Game Programmer & Designer</p>
+        <button class="enter">Press to Enter</button>
+    </section>
+</main>
+
+<style>
+    .hidden {
+        opacity: 0;
+    }
+
+    hr {
+        margin: auto;
+    }
+
+    video.background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+    }
+
+    .banner {
+        margin-top: 180px;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.623);
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .banner hr {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtext {
+        font-size: 36px;
+    }
+
+    .define {
+        font-size: 28px;
+        word-wrap: normal;
+        margin: 28px 20% 28px 20%;
+    }
+
+    .enter {
+        font-size: 24px;
+        margin-top: 30px;
+        padding: 5px 10px 5px 10px;
+        color: white;
+        background-color: black;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: solid 2px white;
+        border-radius: 8px;
+    }
+
+    .enter:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+
+    hr {
+        width: 0;
+        overflow: hidden;
+        border-bottom: solid 4px white;
+        border-top-width: 0px;
+    }
+</style>

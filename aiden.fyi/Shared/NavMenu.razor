@@ -1,0 +1,39 @@
+﻿<div class="hamburger-nav" id="ham-nav">
+    <a onclick="scrollChapter(1)">About Me</a>
+    <a onclick="scrollChapter(2)">Professional Work</a>
+    <a onclick="scrollChapter(3)">Personal Work</a>
+    <a onclick="scrollChapter(4)">Contact Me</a>
+    <a href="/projects/resume">Resume</a>
+</div>
+
+<style>
+    .hamburger-nav {
+        position: fixed;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 0px;
+        background-color: rgb(26, 26, 26);
+        z-index: 9;
+        padding-top: 135px;
+        overflow-x: hidden;
+        transition: all 0.5s;
+    }
+
+    .hamburger-nav a {
+        width: 50%;
+        padding: 15px; /* 15px 15px 10px 15px; */
+        text-decoration: none;
+        font-size: 24px; /* 20px */
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-nav a:hover {
+        filter: invert(71%) sepia(3%) saturate(25%) hue-rotate(332deg) brightness(89%) contrast(97%);
+    }
+</style>

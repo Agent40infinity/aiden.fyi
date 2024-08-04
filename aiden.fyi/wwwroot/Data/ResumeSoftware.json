@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Game Engines",
+    "type": [
+      {
+        "title": "Unity",
+        "level": "6"
+      },
+      {
+        "title": "Unreal Engine 4",
+        "level": "1"
+      },
+      {
+        "title": "Greenfoot",
+        "level": "6"
+      }
+    ]
+  },
+  {
+    "name": "Version Control",
+    "type": [
+      {
+        "title": "Git",
+        "level": "4"
+      },
+      {
+        "title": "Jenkins",
+        "level": "1"
+      }
+    ]
+  },
+  {
+    "name": "IDEs & Frameworks",
+    "type": [
+      {
+        "title": "Visual Studio",
+        "level": "6"
+      },
+      {
+        "title": "VSC",
+        "level": "6"
+      },
+      {
+        "title": "MySQL",
+        "level": "4"
+      },
+      {
+        "title": "React",
+        "level": "3"
+      },
+      {
+        "title": "ASP.NET",
+        "level": "1"
+      },
+      {
+        "title": "Blazor",
+        "level": "3"
+      }
+    ]
+  },
+  {
+    "name": "Art",
+    "type": [
+      {
+        "title": "Photoshop",
+        "level": "6"
+      },
+      {
+        "title": "Cinema 4D",
+        "level": "3"
+      },
+      {
+        "title": "Blender",
+        "level": "1"
+      }
+    ]
+  },
+  {
+    "name": "Media",
+    "type": [
+      {
+        "title": "FileZilla",
+        "level": "6"
+      },
+      {
+        "title": "Audacity",
+        "level": "4"
+      },
+      {
+        "title": "OBS",
+        "level": "6"
+      },
+      {
+        "title": "Resolve",
+        "level": "4"
+      }
+    ]
+  },
+  {
+    "name": "Editing",
+    "type": [
+      {
+        "title": "Premier Pro",
+        "level": "4"
+      },
+
+      {
+        "title": "Sony Vegas",
+        "level": "4"
+      },
+      {
+        "title": "Davinci Resolve 16",
+        "level": "6"
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+﻿<div class="skill-bar">
+    @foreach (var skill in Data)
+    {
+        <Skill Title="@skill.title" Level="@skill.level" />
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<SkillItem> Data { get; set; } = new List<SkillItem>();
+}
+<style>
+    .skill-bar {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+</style>

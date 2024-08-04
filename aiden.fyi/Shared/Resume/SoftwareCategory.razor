@@ -1,0 +1,32 @@
+﻿<div class="skill-bar">
+    @foreach (var category in Data)
+    {
+        <div class="skill-item-category">
+            <SkillBar Data="@category.type" />
+            <div class="item-category-sub">
+                <hr class="horizontal">
+                <p class="item-category-name"> @category.name </p>
+                <hr class="horizontal">
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Components.SoftwareCategory> Data { get; set; } = new List<Components.SoftwareCategory>();
+}
+
+<style>
+    .skill-bar {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+</style>

@@ -1,0 +1,23 @@
+﻿<div class="education-box">
+    @foreach (var study in Data)
+    {
+        <div class="project-item education-item">
+            <div class=project-item-info>
+                <div class="item-info-bar">
+                    <p class="skill-item-name"> @study.degree </p>
+                    <p class="skill-item-location"> @study.date </p>
+                    <p class="skill-item-name"> @study.institute </p>
+                </div>
+                <hr class="horizontal">
+                <div class="item-info-description">
+                    <p class="description-text"> @study.location </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Study> Data { get; set; } = new List<Study>();
+}

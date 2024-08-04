@@ -1,0 +1,50 @@
+﻿@inject HttpClient http
+
+<div class="skill-legend">
+    @foreach (var skill in Data)
+    {
+        <div class="legend-item">
+            <img class="legend-item-icon svg" src="Resources/SVGs/hexagon-slice-@(skill.level).svg" />
+            <p class="legend-item-name"> @skill.title </p>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<SkillItem> Data { get; set; } = new List<SkillItem>();
+}
+
+<style>
+    .skill-legend {
+        width: 13%;
+        margin: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 5px;
+        text-align: left;
+        border: solid 2px white;
+        border-radius: 20px;
+    }
+
+    .legend-item {
+        padding: 2px 5px 2px 5px;
+        margin: 5px 4px 5px 4px;
+        border-radius: 8px;
+        background-color: rgb(45, 45, 45);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .legend-item-icon {
+        height: 25px;
+        width: 25px;
+        margin-left: 2px;
+        transform: translateY(-1px);
+    }
+
+    .legend-item-name {
+        font-size: 20px;
+    }
+</style>

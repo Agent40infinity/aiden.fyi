@@ -1,0 +1,198 @@
+﻿@page "/"
+@inject HttpClient http
+
+<VolumeSlider />
+
+<video class="background" autoplay muted loop>
+    <source src="../Resources/Media/Main.mp4" type="video/mp4">
+</video>
+<Header />
+<main class="content">
+    <img class="arrow special" src="../Resources/SVGs/ArrowDown_Icon.svg" alt="Arrow Down" />
+    <section class="information">
+        <article class="chapter" id="chapter1">
+            <h2 class="title">About Me</h2>
+            <img class="visual" src="../Resources/pfp.jpg" alt="Rouge Game, 1980">
+            <p class="about">
+                Hi I'm Aiden, a Game Developer currently working for Powercor Australia. Previously, I've completed a Bachelor of Game Development at Macquarie University. <br>
+                Currently, I'm working full-time while maintaining and publishing extension packages on the Unity Asset Store alongside an Indie title "Dark Light".
+            </p>
+            <p class="about">
+                This portfolio is designed to show off most of the game development projects that I've worked on or participated in since I was 13.
+                These projects range from professional to indie and include in-development and finished works.
+            </p>
+            <p class="about">
+                This page is dedicated to my desire to express creativity through improvement over well-designed complex systems. To view more in-depth
+                details about each project, click the cards below.
+            </p>
+            <p class="about">
+                <a href="/projects/resume"> Resume </a>
+            </p>
+            <img class="arrow" src="../Resources/SVGs/ArrowDown_Icon.svg" alt="Arrow Down" />
+        </article>
+        @if (ProjectTypes.Count > 0)
+        {
+            <article class="chapter" id="chapter2">
+                <h2 class="title">Professional Work</h2>
+                <ProjectContainer Projects="@ProjectTypes["professional"]" />
+                <img class="arrow" src="../Resources/SVGs/ArrowDown_Icon.svg" alt="Arrow Down" />
+            </article>
+            <article class="chapter" id="chapter3">
+                <h2 class="title">Personal Work</h2>
+                <ProjectContainer Projects="@ProjectTypes["personal"]" />
+                <img class="arrow" src="../Resources/SVGs/ArrowDown_Icon.svg" alt="Arrow Down" />
+            </article>
+        }
+    </section>
+</main>
+<Footer />
+
+@code {
+    public Dictionary<string, List<Project>> ProjectTypes = new Dictionary<string, List<Project>>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        ProjectTypes = await http.GetFromJsonAsync<Dictionary<string, List<Project>>>("Data/Projects.json");
+    }
+}
+
+<style>
+    * {
+        font-family: 'Perpetua';
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        overflow-x: hidden;
+        background-color: black;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+    hr {
+        margin: auto;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtext {
+        font-size: 36px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    a:active {
+        color: white;
+    }
+
+    video.background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+    }
+
+    .menu {
+        height: 25px;
+        width: 25px;
+        filter: invert(100%);
+        cursor: pointer;
+    }
+
+    .menu:hover {
+        filter: invert(71%) sepia(3%) saturate(25%) hue-rotate(332deg) brightness(89%) contrast(97%);
+    }
+
+    hr {
+        width: 0;
+        overflow: hidden;
+        border-bottom: solid 4px white;
+        border-top-width: 0px;
+    }
+
+    .arrow {
+        display: inline-block;
+        transform: scale(1.5);
+        filter: invert(100%);
+        cursor: pointer;
+    }
+
+    .arrow:hover {
+        filter: invert(71%) sepia(3%) saturate(25%) hue-rotate(332deg) brightness(89%) contrast(97%);
+    }
+
+    .arrow.special {
+        display: none;
+        position: absolute;
+        top: 235px;
+        left: 49.4%;
+        z-index: 5;
+    }
+
+    .information {
+        padding: 10% 0px 10% 0px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.623);
+    }
+
+    .chapter {
+        width: 80%;
+        text-align: center;
+        display: inline-block;
+        margin: 400px 10% 400px 10%;
+    }
+
+    #chapter2, #chapter3 {
+        width: 100%;
+        margin: 400px 0px 400px 0px;
+    }
+
+    #chapter1 .arrow {
+        margin-top: 20px;
+    }
+
+    .chapter .about {
+        width: 70%;
+        margin: auto;
+        font-size: 22px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .about a {
+        text-decoration: underline;
+    }
+
+    .visual {
+        max-height: 200px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: solid 2px black;
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+
+    ul {
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .chapter p.listTitle {
+        text-align: left;
+    }
+</style>
